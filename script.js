@@ -5,7 +5,16 @@ let isNumber = function(n) {
 
 function main (){
     let ans = prompt('Угадайте загаданное число');
-    let num = 53;
+
+
+
+
+        let getRandomNum = function(min, max){
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        let num = getRandomNum(1, 100);
 
     
         if(ans === null){
